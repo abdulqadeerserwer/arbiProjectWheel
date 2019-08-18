@@ -24,7 +24,7 @@
 	<script src="assets/js/sweetalert2.min.js" data-manual></script>
 	<script src="assets/js/main.js"></script>
 	
-	<title>Super Wheel | Easy and Fully Controlled Wheel of fortune</title>
+	<title>Snap Wheel | Easy and Fully Controlled Wheel of fortune</title>
 </head>
 
 
@@ -33,7 +33,7 @@
 	
 	<header class="main-header main-header-light js-main-header">
 			
-		<div class="main-header-container container container-xl">
+		<!-- <div class="main-header-container container container-xl">
 			<a href="https://22codes.com" class="logo">
 			<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" width="34" height="34" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 				 viewBox="0 0 34 34" style="enable-background:new 0 0 34 34;" xml:space="preserve">
@@ -45,23 +45,13 @@
 					c0-3.7,1.5-4.9,3.2-4.9c1.9,0,2.9,1.2,2.9,3.1c0,5.4-12.8,7.3-12.8,17.7H34V24.1z"/>
 			</g>
 			</svg>
-			</a>
+			</a> -->
 			
 			
 			
 			<div class="main-nav js-main-nav">
 				<button class="main-nav-trigger js-trigger"><i>Menu</i><em aria-hidden="true">Close</em></button>
-				<nav class="main-nav-list js-nav">
-					<ul>
-						<li><a href="#demo_spinner"> Demo</a></li>
-						<li><a href="#templates">Templates</a></li>
-						<li><a href="#contact-form">Contact Us</a></li>
-						
-						<li><a href="builder.html" class="btn btn-success btn-sm">Try Builder</a></li>
-						<li><a href="docs.html" class="btn btn-primary btn-sm">Documentation</a></li>
-						<li><a href="https://22Codes.com/demo/superwheel" class="btn btn-success btn-sm">Buy now</a></li>
-					</ul>
-				</nav>
+		
 			</div>
 			
 			
@@ -105,10 +95,10 @@
 						</div>
 				
 
-				<h1>SuperWheel</h1>
+				<h1>Snap Wheel</h1>
 				<div class="wheel mb-5"></div>
 				<ul class="intro-btn-group mb-5">
-				<li><button class="btn btn-primary btn-xl btn-block spin-to-win" type="button">Spin to win</button></li>
+				<li><button class="btn btn-primary btn-xl btn-block spin-to-win" type="button">تدور للفوز</button></li>
 				</ul>
 				<script>
 				jQuery(document).ready(function($){
@@ -116,35 +106,35 @@
 					$('.wheel').superWheel({
 						slices: [
 							{
-								text    : '20% OFF',
-								message : 'You win 20% off',
+								text    : 'خصم %20',
+								message : 'تكسب 20 ٪ من',
 								background   : '#364C62',
 								value     : 1
 							},{
-								text    : 'No luck',
-								message : 'You have No luck today',
+								text    : 'لا حظ',
+								message : 'ليس لديك حظ اليوم',
 								background   : '#9575CD',
 								value     : 0
 							},{
-								text    : '30% OFF',
-								message : 'You win 30% off',
+								text    : 'تخفيض %30',
+								message : 'تكسب 30 ٪ من',
 								background   : '#E67E22',
 								value     : 1
 							},{
 								value      : 'd',
-								text    : 'Lose',
-								message : 'You Lose :(',
+								text    : 'تخسر',
+								message : ':( أنت تخسر ',
 								background   : '#E74C3C',
 								win     : 0
 							},{
-								text    : '40% OFF',
-								message : 'You win 40% off',
+								text    : 'تخفيض %40',
+								message : 'تكسب 40 ٪ من',
 								background   : '#2196F3',
 								color : '#fff',
 								value     : 1
 							},{
-								text    : 'Nothing',
-								message : 'You get Nothing :(',
+								text    : 'لا شيئ',
+								message : ' :( يمكنك الحصول على أي شيء ',
 								background   : '#95A5A6',
 								value     : 0
 							}
@@ -198,7 +188,7 @@
 					});
 					
 					$('.wheel').superWheel('onStart',function(results){
-						$('.spin-to-win').text('Spinning...');
+						$('.spin-to-win').text('...الدوران');
 					});
 					
 					
@@ -228,110 +218,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="home-demo home-odd">
-		<div class="container">
-			<div class="content content-odd w-auto tempaltes-list">
-				<h2 id="templates">Templates</h2>
-				<p>Find your template and enjoy building your spinner</p>
-				<div class="row">
-					
-					
-					
-					
-					<div class="col-sm-3">
-						<a class="text-line-none" href="templates/left/left.html" title="Left sidebar">
-						<div class="card mb-5">
-							<img class="card-img-top" src="assets/img/superWheel_left.png" alt="Left sidebar">
-							<div class="btn btn-secondary btn-block brt-none">Left sidebar</div>
-						</div>
-						</a>
-					</div>
-					
-					
-					<div class="col-sm-3">
-						<a class="text-line-none" href="templates/top/top.html" title="Top sidebar">
-						<div class="card mb-5">
-							<img class="card-img-top" src="assets/img/superWheel_top.png" alt="Top sidebar">
-							<div class="btn btn-secondary btn-block brt-none">Top sidebar</div>
-						</div>
-						</a>
-					</div>
-					
-					<div class="col-sm-3">
-						<a class="text-line-none" href="templates/standard/standard.html" title="Standard">
-						<div class="card mb-5">
-							<img class="card-img-top" src="assets/img/superWheel_standard.png" alt="Standard">
-							<div class="btn btn-secondary btn-block brt-none">Standard</div>
-						</div>
-						</a>
-					</div>
-					
-					
-					<div class="col-sm-3">
-						<a class="text-line-none" href="templates/horizontal/horizontal.html" title="Horizontal">
-						<div class="card mb-5">
-							<img class="card-img-top" src="assets/img/superWheel_standard.png" alt="Horizontal">
-							<div class="btn btn-secondary btn-block brt-none">Horizontal</div>
-						</div>
-						</a>
-					</div>
-					<div class="col-sm-3">
-						<a class="text-line-none" href="templates/horizontal-arc/horizontal-arc.html" title="Horizontal - ARC">
-						<div class="card mb-5">
-							<img class="card-img-top" src="assets/img/superWheel_standard.png" alt="Horizontal - ARC">
-							<div class="btn btn-secondary btn-block brt-none">Horizontal - ARC</div>
-						</div>
-						</a>
-					</div>
-					<div class="col-sm-3">
-						<a class="text-line-none" href="templates/letter-spacing/letter-spacing.html" title="Letter spacing">
-						<div class="card mb-5">
-							<img class="card-img-top" src="assets/img/superWheel_standard.png" alt="Letter spacing">
-							<div class="btn btn-secondary btn-block brt-none">Letter spacing</div>
-						</div>
-						</a>
-					</div>
-					<div class="col-sm-3">
-						<a class="text-line-none" href="templates/with-image/with-image.html" title="Images">
-						<div class="card mb-5">
-							<img class="card-img-top" src="assets/img/superWheel_standard.png" alt="Images">
-							<div class="btn btn-secondary btn-block brt-none">Images</div>
-						</div>
-						</a>
-					</div>
-					<div class="col-sm-3">
-						<a class="text-line-none" href="templates/with-icons/with-icons.html" title="Icons">
-						<div class="card mb-5">
-							<img class="card-img-top" src="assets/img/superWheel_standard.png" alt="Icons">
-							<div class="btn btn-secondary btn-block brt-none">Icons</div>
-						</div>
-						</a>
-					</div>
-					<div class="col-sm-3">
-						<div class="card mb-5">
-							<img class="card-img-top" src="assets/img/superWheel_coming.png" alt="More Coming soon...">
-							<div class="btn btn-secondary btn-block brt-none">More Coming soon...</div>
-						</div>
-					</div>
-					
-					<div class="col-sm-12 text-center mt-5">
-						<p class="alert alert-success">
-							Free javascript popup plugin <b><a href="https://sweetalert.js.org/" alt="SweetAlert" title="SweetAlert" target="blank_">SweetAlert</a></b> is included with template files
-						</p>
-					</div>
-					
-					
-					
-					
-					
-					
-					
-					
-					
-				</div>
-		</div>
-	</div>
-</div>
+
 
 
 
