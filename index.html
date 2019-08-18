@@ -134,7 +134,7 @@
 								value     : 1
 							},{
 								text    : 'خصم٪٦٠',
-								message : ' ): يمكنك الحصول على أي شيء ',
+								message : ' مبرووووك',
 								background   : '#95A5A6',
 								value     : 0
 							}
@@ -207,7 +207,8 @@
 								html: results.message+' <br><br><b>Discount : [ '+ results.discount+ ' ]</b>'
 							});
 						}else{
-							swal("Oops!", results.message, "error");
+							swal(results.message,'&#128525;');
+							
 						}
 						$('.spin-to-win:disabled').prop('disabled',false).text('ابدا');
 					});
