@@ -484,3 +484,7 @@ pre[class*='language-'] {
     font-size: 16px !important;
   }
 }
+
+.loggo {
+  height: 150px;
+}
